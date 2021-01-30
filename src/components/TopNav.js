@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function App() {
+function TopNav() {
   const classes = useStyles();
 
   return (
@@ -101,4 +101,4 @@ function App() {
   );
 }
 
-export default App;
+export default TopNav;
