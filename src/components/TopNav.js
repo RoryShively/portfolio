@@ -8,10 +8,13 @@ import Alert from '@material-ui/lab/Alert';
 
 import { NavLink } from 'react-router-dom';
 
+import logo from '../logo2.png';
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    background: "#222",
+    background: "#111",
     display: "flex", 
     margin: "auto",
   },
@@ -30,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+  },
+  appLogo: {
+    width: 60,
+    marginRight: 10,
   },
   title: {
     flexGrow: 1,
@@ -62,6 +69,7 @@ function TopNav() {
         </div>
         <AppBar position="fixed" className={classes.root}>
           <Toolbar className={classes.toolbar}>
+            <img src={logo} className={classes.appLogo} alt="logo" />
             <Typography component={NavLink} to="/" variant="h5" className={classes.title}>
               Rory Shively
             </Typography>
